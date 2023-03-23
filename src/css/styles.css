@@ -385,6 +385,10 @@ table {
 .main-section__logo {
   width: 134px;
 }
+.main-section__content-container {
+  display: flex;
+  flex-direction: row;
+}
 
 .nav-menu__list {
   display: flex;
@@ -440,5 +444,26 @@ table {
   border-radius: 100px;
   transform: rotate(-36.15deg);
   z-index: 1;
+}
+
+.icons {
+  display: flex;
+  flex-direction: row;
+}
+.icons__item {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 40px;
+  height: 40px;
+  border: 1px solid #5290EA;
+  border-radius: 100px;
+  margin-right: 17px;
+}
+.icons__item:last-child {
+  margin-right: 0;
+}
+.icons__item i {
+  font-size: 21px;
 }
 /*# sourceMappingURL=styles.css.map */

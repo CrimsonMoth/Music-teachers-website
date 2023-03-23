@@ -25,6 +25,10 @@ $color-grey: #E2E2E2
     align-items: center
   &__logo
     width: 134px
+  &__content-container
+    display: flex
+    flex-direction: row
+
 
 
 .nav-menu
@@ -75,4 +79,21 @@ $color-grey: #E2E2E2
     border-radius: 100px
     transform: rotate(-36.15deg)
     z-index: 1
+
+.icons
+  display: flex
+  flex-direction: row
+  &__item
+    display: flex
+    justify-content: center
+    align-items: center
+    width: 40px
+    height: 40px
+    border: 1px solid $color-blue
+    border-radius: 100px 
+    margin-right: 17px
+    &:last-child
+      margin-right: 0
+    i
+      font-size: 21px
   
