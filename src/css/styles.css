@@ -386,6 +386,7 @@ table {
   width: 134px;
 }
 .main-section__content-container {
+  position: relative;
   display: flex;
   flex-direction: row;
 }
@@ -446,6 +447,23 @@ table {
   z-index: 1;
 }
 
+.right-wrapper {
+  width: 372px;
+  position: absolute;
+  top: 150px;
+  right: 76px;
+}
+.right-wrapper__icons-box {
+  margin-bottom: 1px;
+  padding-left: 10px;
+}
+.right-wrapper__title {
+  margin-bottom: 5px;
+}
+.right-wrapper__text {
+  font-size: 16px;
+}
+
 .icons {
   display: flex;
   flex-direction: row;
@@ -465,5 +483,10 @@ table {
 }
 .icons__item i {
   font-size: 21px;
+}
+
+.title {
+  font-size: 72px;
+  position: relative;
 }
 /*# sourceMappingURL=styles.css.map */
