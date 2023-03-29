@@ -374,6 +374,8 @@ table {
   height: 800px;
   background: #f0f0f0;
   padding-top: 16px;
+  overflow: hidden;
+  position: relative;
 }
 .main-section__nav-container {
   display: flex;
@@ -389,6 +391,16 @@ table {
   position: relative;
   display: flex;
   flex-direction: row;
+}
+.main-section__first-ellipse {
+  position: absolute;
+  top: 129px;
+  right: 0;
+}
+.main-section__second-ellipse {
+  position: absolute;
+  top: 650px;
+  right: -120px;
 }
 
 .nav-menu__list {
@@ -506,5 +518,29 @@ table {
   color: #fff;
   cursor: pointer;
   z-index: 5;
+}
+
+.ellipse {
+  width: 194px;
+  height: 194px;
+  background: linear-gradient(143.92deg, rgba(237, 123, 80, 0.5) 14.85%, rgba(72, 138, 234, 0.5) 53.25%, rgba(44, 44, 44, 0.5) 85.74%);
+  border-radius: 150px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.ellipse_dig {
+  width: 282px;
+  height: 282px;
+}
+.ellipse__subtract {
+  width: 129.33px;
+  height: 129.33px;
+  background: #f0f0f0;
+  border-radius: 150px;
+}
+.ellipse__subtract_big {
+  width: 188px;
+  height: 188px;
 }
 /*# sourceMappingURL=styles.css.map */
