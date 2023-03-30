@@ -164,8 +164,35 @@ $color-grey: #E2E2E2
   min-height: 700px
   &__container
     padding-top: 32px
+    position: relative
   &__title
     margin-bottom: 40px
+  &__cards-box
+    display: inline-flex
+  &__cards-item
+    margin: 30px
+    &:first-child
+      margin-left: 0
+    &:last-child
+      margin-right: 0
+  &__icons-box
+    display: flex
+    justify-content: space-between
+  &__icons-item
+    margin-right: 60px
+    &:last-child
+      margin-right: 0
+  &__first-ellipse
+    position: absolute
+    top: 80px
+    right: -105px
+    z-index: -1
+  &__second-ellipse
+    position: absolute
+    top: 390px
+    left: -60px  
+    z-index: -1
+
 
 .cards-item
   position: relative
@@ -191,6 +218,17 @@ $color-grey: #E2E2E2
 
 .cards-item_blue
     background: $color-blue
+
+.icons-item
+  display: inline-flex
+  align-items: center
+  &__img
+    width: 80px
+    margin-right: 20px
+  &__text
+    font-size: 18px 
+    span 
+      font-size: 48px
 
   
     
