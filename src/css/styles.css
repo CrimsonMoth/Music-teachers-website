@@ -365,6 +365,23 @@ table {
   box-sizing: border-box;
 }
 
+@font-face {
+  font-family: "Raleway";
+  src: url("../fonts/Raleway-Regular.ttf");
+  font-weight: regular;
+  font-style: normal;
+}
+@font-face {
+  font-family: "Raleway";
+  src: url("../fonts/Raleway-SemiBold.ttf");
+  font-weight: bold;
+  font-style: normal;
+}
+html {
+  font-family: "Raleway";
+  font-weight: regular;
+}
+
 .container {
   max-width: 1140px;
   margin: 0 auto;
@@ -395,7 +412,7 @@ table {
 }
 .main-section__first-ellipse {
   position: absolute;
-  top: 129px;
+  top: 105px;
   right: 0;
 }
 .main-section__second-ellipse {
@@ -467,20 +484,23 @@ table {
   right: 76px;
 }
 .right-wrapper__icons-box {
-  margin-bottom: 1px;
+  margin-bottom: 20px;
   padding-left: 10px;
 }
 .right-wrapper__title {
-  margin-bottom: 5px;
+  margin-bottom: 10px;
+  z-index: 1;
 }
 .right-wrapper__text {
   font-size: 16px;
   margin-bottom: 20px;
+  font-weight: regular;
 }
 
 .icons {
   display: flex;
   flex-direction: row;
+  cursor: pointer;
 }
 .icons__item {
   display: flex;
@@ -488,9 +508,10 @@ table {
   align-items: center;
   width: 40px;
   height: 40px;
-  border: 1px solid #5290EA;
+  border: 1px solid #000;
   border-radius: 100px;
   margin-right: 17px;
+  z-index: 5;
 }
 .icons__item:last-child {
   margin-right: 0;
@@ -500,8 +521,9 @@ table {
 }
 
 .title {
-  font-size: 72px;
+  font-size: 50px;
   position: relative;
+  font-weight: bold;
 }
 
 .buttons {
@@ -515,7 +537,7 @@ table {
   box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
   border-radius: 100px;
   border: none;
-  font-size: 16px;
+  font-size: 15px;
   color: #fff;
   cursor: pointer;
   z-index: 5;
@@ -610,6 +632,7 @@ table {
   position: absolute;
   top: 140px;
   right: 30px;
+  font-weight: bold;
 }
 
 .cards-item_orange {
@@ -633,6 +656,7 @@ table {
 }
 .icons-item__text span {
   font-size: 48px;
+  font-weight: bold;
 }
 
 .third-section {
@@ -654,11 +678,12 @@ table {
   max-width: 480px;
 }
 .third-section__right-title {
-  margin-bottom: 20px;
+  margin-bottom: 18px;
 }
 .third-section__text {
   margin-bottom: 30px;
   font-size: 18px;
+  font-weight: regular;
 }
 .third-section__first-ellipse {
   position: absolute;
@@ -692,5 +717,20 @@ table {
   top: 360px;
   left: 650px;
   transform: rotate(-15deg);
+}
+
+.footer__img {
+  position: absolute;
+  left: -250px;
+  bottom: 0;
+}
+.footer__container {
+  min-height: 272px;
+  display: flex;
+  align-items: center;
+  justify-content: flex-end;
+}
+.footer__title {
+  margin-bottom: 20px;
 }
 /*# sourceMappingURL=styles.css.map */

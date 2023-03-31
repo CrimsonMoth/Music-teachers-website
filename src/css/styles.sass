@@ -4,6 +4,23 @@
 *
   box-sizing: border-box
 
+@font-face 
+  font-family: "Raleway"
+  src: url('../fonts/Raleway-Regular.ttf')
+  font-weight: regular
+  font-style: normal
+
+@font-face 
+  font-family: "Raleway"
+  src: url('../fonts/Raleway-SemiBold.ttf')
+  font-weight: bold
+  font-style: normal
+
+html
+  font-family: "Raleway"
+  font-weight: regular
+
+
 $color-blue: #5290EA
 $color-orange: #F28B64
 $color-grey: #E2E2E2
@@ -34,8 +51,9 @@ $color-grey: #E2E2E2
     flex-direction: row
   &__first-ellipse
     position: absolute
-    top: 129px
+    top: 105px
     right: 0
+    
   &__second-ellipse
     position: absolute
     top: 650px
@@ -96,34 +114,39 @@ $color-grey: #E2E2E2
   top: 150px
   right: 76px
   &__icons-box
-    margin-bottom: 1px
+    margin-bottom: 20px
     padding-left: 10px
   &__title
-    margin-bottom: 5px
+    margin-bottom: 10px
+    z-index: 1
   &__text
     font-size: 16px
     margin-bottom: 20px
+    font-weight: regular
 
 .icons
   display: flex
   flex-direction: row
+  cursor: pointer
   &__item
     display: flex
     justify-content: center
     align-items: center
     width: 40px
     height: 40px
-    border: 1px solid $color-blue
+    border: 1px solid #000
     border-radius: 100px 
     margin-right: 17px
+    z-index: 5
     &:last-child
       margin-right: 0
     i
       font-size: 21px
 
 .title
-  font-size: 72px
+  font-size: 50px
   position: relative
+  font-weight: bold
 
 .buttons
   display: inline-flex
@@ -136,7 +159,7 @@ $color-grey: #E2E2E2
     box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25)
     border-radius: 100px
     border: none
-    font-size: 16px
+    font-size: 15px
     color: #fff
     cursor: pointer
     z-index: 5
@@ -213,6 +236,7 @@ $color-grey: #E2E2E2
     position: absolute
     top: 140px
     right: 30px
+    font-weight: bold
 
 .cards-item_orange
     background: $color-orange
@@ -230,6 +254,7 @@ $color-grey: #E2E2E2
     font-size: 18px 
     span 
       font-size: 48px
+      font-weight: bold
 
 .third-section
   position: relative
@@ -247,10 +272,11 @@ $color-grey: #E2E2E2
   &__right-wrapper
     max-width: 480px
   &__right-title
-    margin-bottom: 20px
+    margin-bottom: 18px
   &__text
     margin-bottom: 30px
     font-size: 18px
+    font-weight: regular
   &__first-ellipse
     position: absolute
     top: 185px
@@ -279,6 +305,19 @@ $color-grey: #E2E2E2
     top: 360px
     left: 650px
     transform: rotate(-15deg)
+
+.footer
+  &__img
+    position: absolute
+    left: -250px
+    bottom: 0
+  &__container
+    min-height: 272px
+    display: flex
+    align-items: center
+    justify-content: flex-end
+  &__title
+    margin-bottom: 20px
 
 
     
