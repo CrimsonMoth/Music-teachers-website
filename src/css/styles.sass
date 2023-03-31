@@ -11,6 +11,7 @@ $color-grey: #E2E2E2
 .container
   max-width: 1140px
   margin: 0 auto
+  position: relative
 
 
 .main-section
@@ -231,8 +232,11 @@ $color-grey: #E2E2E2
       font-size: 48px
 
 .third-section
+  position: relative
   min-height: 640px 
   background: #f0f0f0
+  overflow: hidden
+  z-index: 0
   &__container
     display: flex
     flex-direction: row
@@ -247,6 +251,37 @@ $color-grey: #E2E2E2
   &__text
     margin-bottom: 30px
     font-size: 18px
+  &__first-ellipse
+    position: absolute
+    top: 185px
+    left: 110px
+    z-index: -1
+  &__figure
+    position: absolute
+    top: 280px
+    left: 15px
+    z-index: -1
+  &__second-ellipse
+    position: absolute
+    right: -120px
+    top: -120px
+  &__music-sign
+    width: 55px
+    height: 145px
+    position: absolute
+    top: 345px
+    left: 360px
+    transform: rotate(22deg)
+  &__music-sign__second
+    width: 55px
+    height: 145px
+    position: absolute
+    top: 360px
+    left: 650px
+    transform: rotate(-15deg)
+
+
+    
 
   
 

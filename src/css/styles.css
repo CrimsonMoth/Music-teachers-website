@@ -368,6 +368,7 @@ table {
 .container {
   max-width: 1140px;
   margin: 0 auto;
+  position: relative;
 }
 
 .main-section {
@@ -635,8 +636,11 @@ table {
 }
 
 .third-section {
+  position: relative;
   min-height: 640px;
   background: #f0f0f0;
+  overflow: hidden;
+  z-index: 0;
 }
 .third-section__container {
   display: flex;
@@ -655,5 +659,38 @@ table {
 .third-section__text {
   margin-bottom: 30px;
   font-size: 18px;
+}
+.third-section__first-ellipse {
+  position: absolute;
+  top: 185px;
+  left: 110px;
+  z-index: -1;
+}
+.third-section__figure {
+  position: absolute;
+  top: 280px;
+  left: 15px;
+  z-index: -1;
+}
+.third-section__second-ellipse {
+  position: absolute;
+  right: -120px;
+  top: -120px;
+}
+.third-section__music-sign {
+  width: 55px;
+  height: 145px;
+  position: absolute;
+  top: 345px;
+  left: 360px;
+  transform: rotate(22deg);
+}
+.third-section__music-sign__second {
+  width: 55px;
+  height: 145px;
+  position: absolute;
+  top: 360px;
+  left: 650px;
+  transform: rotate(-15deg);
 }
 /*# sourceMappingURL=styles.css.map */
