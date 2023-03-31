@@ -633,4 +633,27 @@ table {
 .icons-item__text span {
   font-size: 48px;
 }
+
+.third-section {
+  min-height: 640px;
+  background: #f0f0f0;
+}
+.third-section__container {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: space-between;
+  padding-top: 46px;
+  padding-left: 167px;
+}
+.third-section__right-wrapper {
+  max-width: 480px;
+}
+.third-section__right-title {
+  margin-bottom: 20px;
+}
+.third-section__text {
+  margin-bottom: 30px;
+  font-size: 18px;
+}
 /*# sourceMappingURL=styles.css.map */
