@@ -858,6 +858,7 @@ html {
   }
   .right-wrapper__title {
     font-size: 40px;
+    margin-bottom: 5px;
   }
   .right-wrapper__text {
     font-size: 16px;
@@ -933,8 +934,8 @@ html {
   .third-section__text {
     font-size: 16px;
   }
-  .right-wrapper__button.buttons {
-    right: 50px;
+  .third-section .right-wrapper__button.buttons {
+    right: 30px;
   }
   .footer__img {
     width: 500px;
@@ -944,7 +945,7 @@ html {
     margin-bottom: 10px;
   }
   .footer__container {
-    min-height: 210px;
+    min-height: 215px;
   }
   .main-section__first-ellipse {
     top: 15px;
