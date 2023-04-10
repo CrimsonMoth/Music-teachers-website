@@ -499,6 +499,36 @@ $color-grey: #E2E2E2
 @media (max-width: 767px)
   .container
     width: 540px
+  .nav-menu
+    display: none
+  .hamburger
+    width: 30px
+    position: absolute
+    top: 40px
+    right: 30px
+    height: 14px
+    span
+      height: 2px
+      width: 100%
+      display: block 
+      background: #000
+      margin-bottom: 4px
+      transition: 0.5s all
+      &:last-child
+        margin-bottom: 0
+  .hamburger_activ
+    span
+      margin-bottom: -2px
+      &:nth-child(1)
+        transform: translateY(3px) rotate(-45deg)
+      &:nth-child(2)
+        display: none
+      &:nth-child(3)
+        transform: translateY(3px) rotate(45deg)
+
+        
+
+
 
 @media (max-width: 575px)
   .container
