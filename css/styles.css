@@ -988,6 +988,7 @@ html {
     top: 40px;
     right: 30px;
     height: 14px;
+    z-index: 10;
   }
   .hamburger span {
     height: 2px;
@@ -1000,20 +1001,20 @@ html {
   .hamburger span:last-child {
     margin-bottom: 0;
   }
-  .hamburger__active span {
+  .hamburger_active span {
     margin-bottom: -2px;
   }
-  .hamburger__active span:nth-child(1) {
+  .hamburger_active span:nth-child(1) {
     transform: translateY(3px) rotate(-45deg);
   }
-  .hamburger__active span:nth-child(2) {
+  .hamburger_active span:nth-child(2) {
     display: none;
   }
-  .hamburger__active span:nth-child(3) {
+  .hamburger_active span:nth-child(3) {
     transform: translateY(3px) rotate(45deg);
   }
-  .nav-menu__active {
-    right: 0;
+  .hamburger_active .nav-menu_active {
+    right: 0px;
   }
 }
 @media (max-width: 575px) {

@@ -521,6 +521,7 @@ $color-grey: #E2E2E2
     top: 40px
     right: 30px
     height: 14px
+    z-index: 10
     span
       height: 2px
       width: 100%
@@ -530,7 +531,7 @@ $color-grey: #E2E2E2
       transition: 0.5s all
       &:last-child
         margin-bottom: 0
-  .hamburger__active
+  .hamburger_active
     span
       margin-bottom: -2px
       &:nth-child(1)
@@ -538,9 +539,9 @@ $color-grey: #E2E2E2
       &:nth-child(2)
         display: none
       &:nth-child(3)
-        transform: translateY(3px) rotate(45deg)
-  .nav-menu__active
-    right: 0
+        transform: translateY(3px) rotate(45deg) 
+    .nav-menu_active
+        right: 0px
 
 
         
