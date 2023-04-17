@@ -960,6 +960,14 @@ html {
   }
 }
 @media (max-width: 767px) {
+  .main-section {
+    top: 2px;
+    right: 3px;
+  }
+  .ellipse {
+    width: 130px;
+    height: 128px;
+  }
   .container {
     width: 540px;
   }
@@ -1015,6 +1023,56 @@ html {
   }
   .nav-menu_active {
     right: 0px;
+  }
+  .left-wrapper img {
+    width: 450px;
+  }
+  .left-wrapper__rectangle-blue {
+    width: 345px;
+    height: 90px;
+    left: -65px;
+  }
+  .left-wrapper__rectangle-orange {
+    width: 345px;
+    height: 90px;
+    left: -40px;
+    top: 166px;
+  }
+  .left-wrapper__rectangle-grey {
+    width: 345px;
+    height: 90px;
+    left: -17px;
+    top: 185px;
+  }
+  .right-wrapper {
+    width: 242px;
+    top: 5px;
+    right: -20px;
+  }
+  .right-wrapper__icons-box {
+    margin-bottom: 5px;
+    padding-left: 5px;
+  }
+  .right-wrapper__title {
+    font-size: 20px;
+    margin-bottom: 5px;
+  }
+  .right-wrapper__text {
+    font-size: 10px;
+    margin-bottom: 5px;
+  }
+  .buttons__main-btn {
+    font-size: 10px;
+    margin-right: 3px;
+    width: 80px;
+    height: 25px;
+  }
+  .right-wrapper__button.buttons {
+    right: 18px;
+  }
+  .icons__item {
+    width: 30px;
+    height: 30px;
   }
 }
 @media (max-width: 575px) {
